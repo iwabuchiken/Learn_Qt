@@ -21,6 +21,13 @@ private slots:
 private slots:
     void on_actionOpen_triggered();
 
+private slots:
+    void on_actionSave_triggered();
+
+private slots:
+    void on_actionQuit_triggered();
+
+
 private:
     Ui::Notepad *ui;
 };
