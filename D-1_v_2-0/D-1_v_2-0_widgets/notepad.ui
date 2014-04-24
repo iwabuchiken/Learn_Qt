@@ -14,7 +14,7 @@
    <string>Notepad</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -43,45 +43,9 @@
      <x>0</x>
      <y>0</y>
      <width>424</width>
-     <height>50</height>
+     <height>33</height>
     </rect>
    </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-     <horstretch>200</horstretch>
-     <verstretch>50</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>424</width>
-     <height>50</height>
-    </size>
-   </property>
-   <property name="baseSize">
-    <size>
-     <width>30</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="nativeMenuBar">
-    <bool>false</bool>
-   </property>
-   <widget class="QMenu" name="menuFile">
-    <property name="title">
-     <string>File</string>
-    </property>
-    <addaction name="actionOpen"/>
-    <addaction name="actionSave"/>
-    <addaction name="separator"/>
-    <addaction name="actionQuit"/>
-   </widget>
-   <addaction name="menuFile"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -92,36 +56,6 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionOpen">
-   <property name="text">
-    <string>Open</string>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-  </action>
-  <action name="actionSave">
-   <property name="text">
-    <string>Save</string>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-  </action>
-  <action name="actionQuit">
-   <property name="text">
-    <string>Quit</string>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

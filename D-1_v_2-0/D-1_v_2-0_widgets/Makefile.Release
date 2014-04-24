@@ -360,11 +360,11 @@ release/main.o: main.cpp notepad.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
-release/notepad.o: notepad.cpp ../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QFileDialog \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qfiledialog.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qdir.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qstring.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qchar.h \
+release/notepad.o: notepad.cpp notepad.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QMainWindow \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qwidget.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qwindowdefs.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -401,18 +401,17 @@ release/notepad.o: notepad.cpp ../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qwindowdefs_win.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qobject.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qstring.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qfileinfo.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qfile.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qfiledevice.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qiodevice.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qobject.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qobjectdefs_impl.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qlist.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qiterator.h \
@@ -423,18 +422,6 @@ release/notepad.o: notepad.cpp ../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qcontainerfwd.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qisenum.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qobject_impl.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qshareddata.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qstringlist.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qdatastream.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qpair.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qregexp.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qstringmatcher.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qurl.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qurlquery.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qdialog.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qwidget.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qwindowdefs.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qwindowdefs_win.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qmargins.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qrect.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qsize.h \
@@ -443,6 +430,12 @@ release/notepad.o: notepad.cpp ../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qpalette.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qcolor.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qrgb.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qstringlist.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qdatastream.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qiodevice.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qpair.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qregexp.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qstringmatcher.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qbrush.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qvector.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qmatrix.h \
@@ -454,6 +447,7 @@ release/notepad.o: notepad.cpp ../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qpixmap.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qsharedpointer.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qshareddata.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qhash.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qfont.h \
@@ -470,25 +464,19 @@ release/notepad.o: notepad.cpp ../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qlocale.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qset.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qcontiguouscache.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qurl.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qurlquery.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qfile.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qfiledevice.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qvector2d.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qtouchdevice.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/QFile \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/QTextStream \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QMenuBar \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qmenubar.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qmenu.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qicon.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		notepad.h \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QMainWindow \
-		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtGui/qicon.h \
 		ui_notepad.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/QVariant \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QAction \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QApplication \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
@@ -515,6 +503,9 @@ release/notepad.o: notepad.cpp ../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QMenuBar \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qmenubar.h \
+		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qmenu.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
 		../../../../../PROGRAMS/Qt/Qt_5_2_1/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
